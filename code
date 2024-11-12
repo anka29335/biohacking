@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Go Blue!</title>
+</head>
+</head>
+<body>
+    <main>
+        <h1>Biohacking</h1>
+        <div>
+            <h2>About</h2>
+            <p>Do-it-yourself biology is a biotechnological social movement in which individuals, communities, and small organizations study biology and life science using the same methods as traditional research institutions.</p>
+        </div>
+      <a href="https://www.redbull.com/ke-en/theredbulletin/free-natural-biohacking-tips"><h3>Best webiste to check out biohacks</h3></a>
+        <div>
+            <h2>Biohacks for students</h2>
+            <h3>Quick biohacks to apply</h3>
+            <ul>
+                <li>SLEEP: The number 1 Biohack</li>
+                <li>EARTHING: The positive in the negative</li>
+                <li>BREATHING: Our brain’s remote control</li>
+                <li>FASTING: Cleanse, don’t eat</li>
+                <li>FOREST: Green bathing</li>
+                <li>WATER: 99/100</li>
+                <li>MEDITATION : The brain improver</li>
+                <li>HEAT: The life-lengthener</li>
+                <li>COLD: Inflammation’s natural enemy</li>
+            </ul> 
+        <div>
+            <h2>Gallery</h2>
+            <img src="images/band.jpeg" alt="Sleep" width="90%">
+            <img src="images/diag.jpg" alt="Earthing" width="90%">
+            <img src="images/lawquad.jpeg" alt="Breathing" width="90%">
+        </div>
+            
+            <ol>
+             <strong>My personal favourites:</strong>
+                <li>sleep</li>
+                <li>earthings</li>
+                <li>breathing</li>
+            </ol>
+        </div>
+
+    </main>
+</body>
+</html>
