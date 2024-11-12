@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+hin<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,9 +32,9 @@
             </ul> 
         <div>
             <h2>Gallery</h2>
-            <img src="images/band.jpeg" alt="Sleep" width="90%">
-            <img src="images/diag.jpg" alt="Earthing" width="90%">
-            <img src="images/lawquad.jpeg" alt="Breathing" width="90%">
+            <img src="earthing.jpeg" alt="Sleep" width="90%">
+            <img src="breathing.jpg" alt="Earthing" width="90%">
+            <img src="sleep.jpeg" alt="Breathing" width="90%">
         </div>
             
             <ol>
