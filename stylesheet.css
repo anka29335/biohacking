@@ -54,6 +54,19 @@ body {
     border-radius: 25px;
     border: none;
 }
+/* About Me Section */
+.about {
+    padding: 40px 20px;
+    background-color: #f0f8f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-wrapper {
+    max-width: 50%;
+    text-align: center;
 
 
 .article-grid {
