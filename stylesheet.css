@@ -4,7 +4,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     color: #00463e;
-    line-height: 1.6;
 }
 
 /* Header */
@@ -28,17 +27,66 @@ body {
     font-size: 1.1em;
 }
 
-.nav a:hover {
-    color: #85d6b0;
-}
-
-/* Hero Section */
-.hero {
-    background: url('banner-placeholder.jpg') center/cover no-repeat;
+/* Footer */
+.footer {
+    background-color: #00463e;
     color: white;
-    text-align: center;
-    padding: 100px 20px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.hero h1 {
-    font
+.footer-section h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #85d6b0;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ffd3b6;
+}
+
+/* Articles Section */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #f0f8f7;
+    padding: 20px;
+}
+
+.article-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Recipes Section */
+.collage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.collage-tile {
+    text-align: center;
+}
+
+.view-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #85d6b0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-more-button:hover {
+    background-color: #ffd3b6;
+}
