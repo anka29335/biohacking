@@ -8,70 +8,151 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <img src="logo-placeholder.png" alt="Bulletproof Biohacking Logo" class="logo">
         <nav class="nav">
-            <a href="#about">About Me</a>
-            <a href="#articles">Articles</a>
-            <a href="#resources">Resources</a>
-            <a href="#community">Community</a>
-            <a href="#contact">Contact</a>
+            <a href="about.html">About Me</a>
+            <a href="articles.html">Articles</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="books.html">Books</a>
+            <a href="inspirations.html">Inspirations</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>Biohack your way to greatness. Become bulletproof.</h1>
+        <h1>Biohack your way to greatness</h1>
         <button class="cta-button">Join the Movement</button>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>Hi, I'm [Your Name], a passionate biohacker on a mission to help others unlock their full potential. Learn how I started my journey and how you can begin yours today.</p>
-            <img src="about-placeholder.jpg" alt="About Me Graphic">
+    <!-- Recent Articles Section -->
+    <section class="recent-articles">
+        <h2>Recent Articles</h2>
+        <div class="article-list">
+            <div class="article-item">
+                <img src="article1.jpg" alt="Article 1">
+                <div class="article-content">
+                    <h3>How to Master Intermittent Fasting</h3>
+                    <p>Discover the secrets to maintaining energy and focus with fasting.</p>
+                    <a href="article1.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="article2.jpg" alt="Article 2">
+                <div class="article-content">
+                    <h3>Optimizing Sleep for Productivity</h3>
+                    <p>Learn practical ways to improve your rest and maximize your output.</p>
+                    <a href="article2.html" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="article3.jpg" alt="Article 3">
+                <div class="article-content">
+                    <h3>The Science of Keto</h3>
+                    <p>Why ketogenic diets work and how to get started effectively.</p>
+                    <a href="article3.html" class="read-more">Read More</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="articles" class="articles">
-        <h2>Articles</h2>
-        <div class="article-grid">
-            <div class="article-card" style="background-color: #ffd3b6;">How to Master Intermittent Fasting</div>
-            <div class="article-card" style="background-color: #b3e5dc;">The Best Sleep Hacks for Productivity</div>
-            <div class="article-card" style="background-color: #e89cae;">Optimizing Nutrition with Keto</div>
+    <!-- Recent Recipes Section -->
+    <section class="recent-recipes">
+        <h2>Recent Recipes</h2>
+        <div class="collage-grid">
+            <div class="collage-tile">
+                <img src="recipe1.jpg" alt="Recipe 1">
+                <h3>Avocado Smoothie</h3>
+            </div>
+            <div class="collage-tile">
+                <img src="recipe2.jpg" alt="Recipe 2">
+                <h3>Keto Pancakes</h3>
+            </div>
+            <div class="collage-tile">
+                <img src="recipe3.jpg" alt="Recipe 3">
+                <h3>Bulletproof Coffee</h3>
+            </div>
+            <div class="collage-tile">
+                <img src="recipe4.jpg" alt="Recipe 4">
+                <h3>Protein Muffins</h3>
+            </div>
+            <div class="collage-tile view-more">
+                <a href="recipes.html">View More Recipes</a>
+            </div>
         </div>
     </section>
 
-    <section id="resources" class="resources">
-        <h2>Resources</h2>
-        <p>Explore tools, apps, and book reviews curated for biohackers like you.</p>
-        <img src="resources-placeholder.jpg" alt="Resources Graphic">
-    </section>
-
-    <section id="community" class="community">
-        <h2>Community Stories</h2>
-        <p>Get inspired by the experiences and success stories of other biohackers.</p>
-        <div class="community-grid">
-            <div class="community-card" style="background-color: #f6e3c3;">John's Success Story</div>
-            <div class="community-card" style="background-color: #f0f8f7;">Lisa's Morning Routine</div>
-            <div class="community-card" style="background-color: #b3e5dc;">How Mark Uses Biohacking</div>
+    <!-- Latest Book Recommendations Section -->
+    <section class="recent-books">
+        <h2>Latest Book Recommendations</h2>
+        <div class="book-slider">
+            <div class="book-tile">
+                <img src="book1.jpg" alt="Book 1">
+                <h3>Clean 7</h3>
+                <p>Dr. Alejandro Junger</p>
+            </div>
+            <div class="book-tile">
+                <img src="book2.jpg" alt="Book 2">
+                <h3>Why We Sleep</h3>
+                <p>Matthew Walker</p>
+            </div>
+            <div class="book-tile">
+                <img src="book3.jpg" alt="Book 3">
+                <h3>The Keto Reset Diet</h3>
+                <p>Mark Sisson</p>
+            </div>
+            <div class="book-tile">
+                <img src="book4.jpg" alt="Book 4">
+                <h3>Atomic Habits</h3>
+                <p>James Clear</p>
+            </div>
+            <div class="book-tile">
+                <img src="book5.jpg" alt="Book 5">
+                <h3>Lifespan</h3>
+                <p>David Sinclair</p>
+            </div>
+            <div class="book-tile view-more">
+                <a href="books.html">See All Books</a>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="newsletter">
-            <h3>Stay Updated</h3>
-            <input type="email" placeholder="Enter your email">
-            <button>Subscribe</button>
+        <div class="footer-section">
+            <h3>Popular Categories</h3>
+            <ul>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="mindfulness.html">Mindfulness</a></li>
+            </ul>
         </div>
-        <div class="social">
-            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
         </div>
-        <div class="links">
-            <a href="#articles">Popular Articles</a> | 
-            <a href="#resources">Resources</a> | 
-            <a href="#">Privacy Policy</a>
+        <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="tools.html">Biohacking Tools</a></li>
+                <li><a href="apps.html">Recommended Apps</a></li>
+                <li><a href="books.html">Book Reviews</a></li>
+            </ul>
         </div>
-        <p>&copy; 2024 Bulletproof Biohacking. All rights reserved.</p>
+        <div class="footer-right">
+            <h3>Follow Me</h3>
+            <ul class="social-links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
