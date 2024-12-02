@@ -27,10 +27,6 @@ body {
     font-size: 1.1em;
 }
 
-.nav a:hover {
-    color: #85d6b0;
-}
-
 /* Hero Section */
 .hero {
     background: url('banner-placeholder.jpg') center/cover no-repeat;
@@ -39,7 +35,44 @@ body {
     padding: 100px 20px;
 }
 
-/* Articles Section */
+.hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button {
+    background-color: #85d6b0;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: none;
+}
+
+/* About Me Section */
+.about {
+    padding: 40px 20px;
+    background-color: #f0f8f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-wrapper {
+    max-width: 50%;
+    text-align: center;
+}
+
+/* Recent Articles Section */
+.recent-articles {
+    padding: 40px 20px;
+    background-color: #f0f8f7;
+    text-align: center;
+}
+
+/* Article Grid Layout */
 .article-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,13 +84,36 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    text-align: center;
 }
 
-/* Collage Grid */
+.article-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #85d6b0;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.article-btn:hover {
+    background-color: #ffd3b6;
+}
+
+/* Recipe & Book Grid Layout */
 .collage-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding: 20px;
+}
+
+.collage-tile {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .collage-tile img {
@@ -66,12 +122,18 @@ body {
     object-fit: cover;
 }
 
+/* View More Button */
+.view-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .view-more-button {
-    padding: 10px 20px;
     background-color: #00463e;
     color: white;
-    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .view-more-button:hover {
@@ -82,6 +144,64 @@ body {
 .footer {
     background-color: #00463e;
     color: white;
+    padding: 20px 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1;
+    max-width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-section h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: #85d6b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ffd3b6;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-right ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-right li {
+    margin: 0;
+}
+
+.footer-right a {
+    color: white;
+}
+
+.footer-right a:hover {
+    color: #85d6b0;
 }
