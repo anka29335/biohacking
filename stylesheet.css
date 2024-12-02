@@ -150,14 +150,14 @@ body {
     justify-content: space-between;
     text-align: left;
     width: 100%; /* Ensure the footer takes up the full width */
+    box-sizing: border-box; /* Make sure padding is included in width calculation */
 }
 
 .footer-section {
-    flex: 1; /* Flex-grow: 1 to allow sections to grow equally */
-    min-width: 200px; /* Ensure minimum width to avoid sections shrinking too much */
+    flex: 1 1 200px; /* Allow sections to grow, shrink, and set a min width */
     padding: 20px;
-    box-sizing: border-box; /* Make sure padding is included in the width calculation */
     margin: 10px; /* Add spacing between footer sections */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .footer-section h3 {
@@ -208,3 +208,20 @@ body {
     color: #85d6b0;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center; /* Align footer sections vertically on smaller screens */
+    }
+
+    .footer-section {
+        text-align: center;
+        max-width: 100%; /* Allow sections to take full width on small screens */
+        margin: 10px 0; /* Remove side margins for smaller screens */
+    }
+
+    .footer-right ul {
+        flex-direction: column;
+    }
+}
