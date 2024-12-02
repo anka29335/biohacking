@@ -4,6 +4,31 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     color: #00463e;
+    padding: 0; /* Ensure no extra space around the body */
+}
+
+/* Header Styles */
+.header {
+    background-color: #00463e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+}
+
+/* Navigation */
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
 }
 
 /* Footer Styles */
@@ -15,6 +40,7 @@ body {
     flex-wrap: wrap; /* Allow sections to wrap if the screen is smaller */
     align-items: flex-start; /* Align items to the top */
     padding: 40px 30px;
+    box-sizing: border-box; /* Prevent padding from expanding beyond the container */
 }
 
 /* Footer Sections */
@@ -22,6 +48,7 @@ body {
     flex-basis: 23%; /* Each section takes about 1/4 of the width */
     margin: 10px;
     text-align: left;
+    box-sizing: border-box; /* Prevent margin/padding from affecting the layout */
 }
 
 /* Footer Section Headings */
@@ -54,24 +81,7 @@ body {
     color: #85d6b0;
 }
 
-
-/* Other Styles (existing styles) */
-.header {
-    background-color: #00463e;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-}
-
-.logo {
-    width: 150px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
+/* Add padding to sections that might have gaps, like the header and main content */
+.main-content {
+    padding: 20px;
 }
