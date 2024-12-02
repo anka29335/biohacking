@@ -12,6 +12,7 @@ body {
     color: white;
     display: flex;
     justify-content: space-between; /* Distribute sections horizontally */
+    flex-wrap: wrap;
     align-items: flex-start; /* Align items to the top */
     padding: 40px 30px;
     flex-wrap: wrap; /* Allow sections to wrap if the screen is smaller */
