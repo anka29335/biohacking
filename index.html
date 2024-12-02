@@ -1,154 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulletproof Biohacking</title>
-    <link rel="stylesheet" href="stylesheet.css">
+/* General Reset for All Elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
 
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <img src="logo-placeholder.png" alt="Bulletproof Biohacking Logo" class="logo">
-        <nav class="nav">
-            <a href="about.html">About Me</a>
-            <a href="articles.html">Articles</a>
-            <a href="recipes.html">Recipes</a>
-            <a href="books.html">Books</a>
-            <a href="inspirations.html">Inspirations</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #00463e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+}
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Biohack your way to greatness</h1>
-        <button class="cta-button">Join the Movement</button>
-    </section>
+/* Header Styling */
+.header {
+    background-color: #00463e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
 
-    <!-- About Me Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-wrapper">
-            <p>
-                Hi, I'm [Your Name], a passionate biohacker on a mission to help others unlock their full potential. Learn how I started my journey and how you can begin yours today. 
-            </p>
-            <img src="about-placeholder.jpg" alt="About Me Graphic">
-        </div>
-    </section>
+/* Navigation Links */
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
 
-    <!-- Recent Articles Section -->
-    <section class="recent-articles">
-        <h2>Recent Articles</h2>
-        <div class="article-grid">
-            <div class="article-card">
-                <h3>How to Master Intermittent Fasting</h3>
-                <p>Discover the secrets to maintaining energy and focus with fasting.</p>
-                <a href="#" class="article-btn">Read More</a>
-            </div>
-            <div class="article-card">
-                <h3>Optimizing Sleep for Productivity</h3>
-                <p>Learn practical ways to improve your rest and maximize your output.</p>
-                <a href="#" class="article-btn">Read More</a>
-            </div>
-            <div class="article-card">
-                <h3>The Science of Keto</h3>
-                <p>Why ketogenic diets work and how to get started effectively.</p>
-                <a href="#" class="article-btn">Read More</a>
-            </div>
-        </div>
-    </section>
+/* Hero Section */
+.hero {
+    background: #85d6b0;
+    color: #00463e;
+    text-align: center;
+    padding: 50px;
+}
 
-    <!-- Recent Recipes Section -->
-    <section class="recent-recipes">
-        <h2>Recent Recipes</h2>
-        <div class="collage-grid">
-            <div class="collage-tile">
-                <img src="recipe1.jpg" alt="Recipe 1">
-                <h3>Avocado Smoothie</h3>
-            </div>
-            <div class="collage-tile">
-                <img src="recipe2.jpg" alt="Recipe 2">
-                <h3>Keto Pancakes</h3>
-            </div>
-            <div class="collage-tile">
-                <img src="recipe3.jpg" alt="Recipe 3">
-                <h3>Bulletproof Coffee</h3>
-            </div>
-            <div class="collage-tile">
-                <img src="recipe4.jpg" alt="Recipe 4">
-                <h3>Protein Muffins</h3>
-            </div>
-        </div>
-        <div class="view-more">
-            <a href="recipes.html" class="view-more-button">View More Recipes</a>
-        </div>
-    </section>
+/* Hero Button */
+.cta-button {
+    background-color: #00463e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
 
-    <!-- Latest Book Recommendations Section -->
-    <section class="recent-books">
-        <h2>Latest Book Recommendations</h2>
-        <div class="collage-grid">
-            <div class="collage-tile">
-                <img src="book1.jpg" alt="Book 1">
-                <h3>Clean 7</h3>
-                <p>Dr. Alejandro Junger</p>
-            </div>
-            <div class="collage-tile">
-                <img src="book2.jpg" alt="Book 2">
-                <h3>Why We Sleep</h3>
-                <p>Matthew Walker</p>
-            </div>
-            <div class="collage-tile">
-                <img src="book3.jpg" alt="Book 3">
-                <h3>The Keto Reset Diet</h3>
-                <p>Mark Sisson</p>
-            </div>
-            <div class="collage-tile">
-                <img src="book4.jpg" alt="Book 4">
-                <h3>Atomic Habits</h3>
-                <p>James Clear</p>
-            </div>
-        </div>
-        <div class="view-more">
-            <a href="books.html" class="view-more-button">View More Books</a>
-        </div>
-    </section>
+.cta-button:hover {
+    background-color: #85d6b0;
+}
 
-    <!-- Footer Section -->
-<footer class="footer">
-    <div class="footer-section">
-        <h3>About Us</h3>
-        <ul>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Careers</a></li>
-        </ul>
-    </div>
-    <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    <div class="footer-section">
-        <h3>Connect</h3>
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
-    </div>
-    <div class="footer-section">
-        <h3>Newsletter</h3>
-        <form>
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-</footer>
-</body>
-</html>
+/* Section Styling for About, Articles, Recipes, and Books */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #00463e;
+    margin-bottom: 20px;
+}
+
+/* Article Grid and Card Layout */
+.article-grid, .collage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.article-card, .collage-tile {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-card h3, .collage-tile h3 {
+    font-size: 1.2em;
+    color: #00463e;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #00463e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 40px 30px;
+}
+
+.footer-section {
+    flex-basis: 23%;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-section a:hover {
+    color: #85d6b0;
+}
+
+/* Footer Responsive Adjustments */
+@media (max-width: 1024px) {
+    .footer-section {
+        flex-basis: 48%; /* 2 sections per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%; /* Full width for each section */
+    }
+}
+
+/* View More Button Styling */
+.view-more-button {
+    background-color: #00463e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-more-button:hover {
+    background-color: #85d6b0;
+}
+
+/* Footer Alignment Fix */
+footer {
+    flex-shrink: 0;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+}
