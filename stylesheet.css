@@ -6,27 +6,158 @@ body {
     color: #00463e;
 }
 
-/* Footer Styles */
+/* Header */
+.header {
+    background-color: #00463e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+/* Hero Section */
+.hero {
+    background: url('banner-placeholder.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button {
+    background-color: #85d6b0;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: none;
+}
+
+/* About Me Section */
+.about {
+    padding: 40px 20px;
+    background-color: #f0f8f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-wrapper {
+    max-width: 50%;
+    text-align: center;
+}
+
+/* Recent Articles Section */
+.recent-articles {
+    padding: 40px 20px;
+    background-color: #f0f8f7;
+    text-align: center;
+}
+
+/* Article Grid Layout */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.article-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.article-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #85d6b0;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.article-btn:hover {
+    background-color: #ffd3b6;
+}
+
+/* Recipe & Book Grid Layout */
+.collage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.collage-tile {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collage-tile img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* View More Button */
+.view-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-more-button {
+    background-color: #00463e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.view-more-button:hover {
+    background-color: #85d6b0;
+}
+
+/* Footer */
 .footer {
     background-color: #00463e; /* Dark Green Background */
     color: white;
     display: flex;
-    justify-content: space-between; /* Distribute sections horizontally */
-    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Place sections next to each other */
     padding: 40px 30px;
     flex-wrap: wrap; /* Allow sections to wrap if the screen is smaller */
 }
 
 .footer-section {
-    max-width: 23%; /* Make each section take 1/4 of the width */
+    max-width: 23%; /* Each section takes up 1/4 of the space */
     margin: 10px;
-    text-align: left;
 }
 
 .footer-section h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #fff;
 }
 
 .footer-section ul {
@@ -48,37 +179,16 @@ body {
     color: #85d6b0;
 }
 
-/* Adjustments for small screen sizes */
+/* Media Queries */
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column; /* Stack footer sections vertically */
-        align-items: center; /* Center align sections */
+        flex-direction: column;
+        align-items: center; /* Align footer sections vertically on smaller screens */
     }
 
     .footer-section {
-        max-width: 100%; /* Make each section take full width on smaller screens */
-        text-align: center;
-        margin: 10px 0; /* Add vertical margin between sections */
+        max-width: 100%; /* Allow sections to take full width on small screens */
+        text-align: center; /* Center align footer text */
+        margin: 10px 0; /* Remove side margins for smaller screens */
     }
-}
-
-/* Other Styles (existing styles) */
-.header {
-    background-color: #00463e;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-}
-
-.logo {
-    width: 150px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
 }
