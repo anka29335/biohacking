@@ -12,54 +12,62 @@ body {
     color: white;
     display: flex;
     justify-content: space-between; /* Distribute sections horizontally */
-    flex-wrap: wrap;
     align-items: flex-start; /* Align items to the top */
     padding: 40px 30px;
     flex-wrap: wrap; /* Allow sections to wrap if the screen is smaller */
 }
 
+/* Footer Sections */
 .footer-section {
-    max-width: 23%; /* Make each section take 1/4 of the width */
+    flex-basis: 23%; /* Each section takes about 1/4 of the width */
     margin: 10px;
     text-align: left;
 }
 
+/* Footer Section Headings */
 .footer-section h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: #fff;
 }
 
+/* Footer Section Lists */
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
 
+/* List Items */
 .footer-section li {
     margin-bottom: 8px;
 }
 
+/* Links */
 .footer-section a {
     color: white;
     text-decoration: none;
     font-size: 1em;
 }
 
+/* Hover effect for links */
 .footer-section a:hover {
     color: #85d6b0;
 }
 
-/* Adjustments for small screen sizes */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column; /* Stack footer sections vertically */
-        align-items: center; /* Center align sections */
-    }
-
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
     .footer-section {
-        max-width: 100%; /* Make each section take full width on smaller screens */
-        text-align: center;
-        margin: 10px 0; /* Add vertical margin between sections */
+        flex-basis: 45%; /* 2 sections per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%; /* Stack sections vertically on small screens */
+    }
+    .footer {
+        justify-content: center; /* Center content on very small screens */
+        padding: 20px;
     }
 }
 
