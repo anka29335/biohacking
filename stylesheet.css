@@ -54,22 +54,7 @@ body {
     color: #85d6b0;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-    .footer-section {
-        flex-basis: 45%; /* 2 sections per row on medium screens */
-    }
-}
 
-@media (max-width: 768px) {
-    .footer-section {
-        flex-basis: 100%; /* Stack sections vertically on small screens */
-    }
-    .footer {
-        justify-content: center; /* Center content on very small screens */
-        padding: 20px;
-    }
-}
 
 /* Other Styles (existing styles) */
 .header {
