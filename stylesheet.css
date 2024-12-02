@@ -1,1 +1,98 @@
+Below is an example CSS code for a **tile-based biohacking website layout**, incorporating your chosen colors and sections.
 
+```css
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Layout Grid */
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    grid-column: span 3;
+    background-color: #00463e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+/* Hero Section */
+.hero {
+    grid-column: span 3;
+    background-color: #f0f8f7;
+    color: #00463e;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 2em;
+}
+
+/* Blog Posts */
+.blog-post {
+    background-color: #85d6b0;
+    color: #00463e;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* General Articles */
+.article {
+    background-color: #f5f5f5;
+    color: #00463e;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Book Recommendations */
+.book {
+    background-color: #dbcdf0;
+    color: #00463e;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Recipes */
+.recipe {
+    background-color: #f6e3c3;
+    color: #00463e;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Inspiration Section */
+.inspiration {
+    background-color: #e89cae;
+    color: #00463e;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    grid-column: span 3;
+    background-color: #00463e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1
