@@ -140,22 +140,23 @@ body {
     background-color: #85d6b0;
 }
 
-/* Footer Styles */
+/* Footer Container Styles */
 .footer {
     background-color: #00463e; /* Dark Green Background */
     color: white;
-    display: flex;
-    justify-content: space-between; /* Distribute sections horizontally */
-    flex-wrap: wrap; /* Allow sections to wrap if the screen is smaller */
-    align-items: flex-start; /* Align items to the top */
+    display: flex;             /* Use flexbox for layout */
+    justify-content: space-between;  /* Space out the sections evenly */
+    align-items: flex-start;   /* Align items to the top */
     padding: 40px 30px;
+    gap: 20px; /* Gap between sections */
+    flex-wrap: wrap;  /* Allow sections to wrap on smaller screens */
 }
 
-/* Footer Sections */
+/* Footer Section Styles */
 .footer-section {
-    flex-basis: 23%; /* Each section takes about 1/4 of the width */
-    margin: 10px;
-    text-align: left;
+    flex: 1 1 23%;  /* Take about 23% width of the footer */
+    min-width: 200px;  /* Ensure minimum width for sections */
+    margin-bottom: 20px;  /* Add some margin at the bottom */
 }
 
 /* Footer Section Headings */
@@ -186,4 +187,32 @@ body {
 /* Hover effect for links */
 .footer-section a:hover {
     color: #85d6b0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack sections vertically on small screens */
+        align-items: center; /* Center the content */
+    }
+
+    .footer-section {
+        flex: 1 1 100%; /* Sections take full width */
+        text-align: center; /* Center-align text in sections */
+    }
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px; /* Reduce padding on very small screens */
+    }
+
+    .footer-section h3 {
+        font-size: 1em; /* Adjust heading size */
+    }
+
+    .footer-section a {
+        font-size: 0.9em; /* Adjust font size of links */
+    }
 }
