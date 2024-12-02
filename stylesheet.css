@@ -54,6 +54,38 @@ body {
     color: #85d6b0;
 }
 
+/* Media Queries for Responsiveness */
+
+/* For medium screens (1024px and below), reduce the number of sections per row */
+@media (max-width: 1024px) {
+    .footer-section {
+        flex-basis: 45%; /* 2 sections per row on medium screens */
+    }
+}
+
+/* For smaller screens (768px and below), stack sections vertically */
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%; /* 1 section per row on small screens */
+    }
+    .footer {
+        justify-content: center; /* Center content on very small screens */
+        padding: 20px;
+    }
+}
+
+/* For extra small screens (480px and below), make adjustments for better spacing */
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px; /* Smaller padding on very small screens */
+    }
+    .footer-section {
+        flex-basis: 100%; /* Stack sections vertically */
+        margin: 5px 0; /* Reduce margin between sections */
+    }
+}
+
+
 
 
 /* Other Styles (existing styles) */
