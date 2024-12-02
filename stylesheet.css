@@ -208,19 +208,3 @@ body {
     color: #85d6b0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center; /* Align footer sections vertically on smaller screens */
-    }
-
-    .footer-section {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .footer-right ul {
-        flex-direction: column;
-    }
-}
