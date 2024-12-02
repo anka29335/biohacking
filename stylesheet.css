@@ -1,15 +1,19 @@
-/* General Reset */
+/* General Reset for All Elements */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and borders are part of the element's total width/height */
+    box-sizing: border-box; /* Makes sure padding and border are included in element's width/height */
 }
 
-/* Body Styles */
+/* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
-    color: #00463e;
+    background-color: white; /* White background for body */
+    color: #00463e; /* Dark green text color */
+    padding: 0; /* Ensure no margin or padding is applied */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full height of the screen */
 }
 
 /* Header Styles */
@@ -23,31 +27,13 @@ body {
     width: 100%;
 }
 
-/* Logo */
-.logo {
-    width: 150px;
-}
-
-/* Navigation Links */
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
-}
-
-/* Main Content Styles */
-.main-content {
-    padding: 20px;
-}
-
 /* Footer Styles */
 .footer {
     background-color: #00463e; /* Dark Green Background */
     color: white;
     display: flex;
     justify-content: space-between; /* Distribute sections horizontally */
-    flex-wrap: wrap; /* Allow sections to wrap if the screen is smaller */
+    flex-wrap: wrap; /* Allow sections to wrap if needed */
     align-items: flex-start; /* Align items to the top */
     padding: 40px 30px;
     width: 100%;
@@ -55,7 +41,7 @@ body {
 
 /* Footer Sections */
 .footer-section {
-    flex-basis: 23%; /* Each section takes about 1/4 of the width */
+    flex-basis: 23%; /* Make each section take up about 1/4th of the width */
     margin: 10px;
     text-align: left;
 }
@@ -90,12 +76,11 @@ body {
     color: #85d6b0;
 }
 
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 1024px) {
     .footer {
         padding: 30px;
     }
-
     .footer-section {
         flex-basis: 48%; /* 2 sections per row */
     }
@@ -105,8 +90,19 @@ body {
     .footer {
         padding: 20px;
     }
-
     .footer-section {
         flex-basis: 100%; /* Full width for each section */
     }
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+    flex-grow: 1; /* Ensure content takes remaining space between header and footer */
+}
+
+/* Footer Alignment Fix */
+footer {
+    flex-shrink: 0; /* Ensures the footer doesn't shrink */
+    margin-top: auto; /* Push the footer to the bottom of the page */
 }
