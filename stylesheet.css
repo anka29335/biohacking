@@ -141,32 +141,52 @@ body {
 }
 
 /* Footer */
-<footer class="footer">
-    <div class="footer-section">
-        <h3>Section 1</h3>
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-        </ul>
-    </div>
-    <div class="footer-section">
-        <h3>Section 2</h3>
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-        </ul>
-    </div>
-    <div class="footer-section footer-right">
-        <h3>Section 3</h3>
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-        </ul>
-    </div>
-</footer>
+.footer {
+    background-color: #00463e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #85d6b0;
+}
+
+.footer-right {
+    text-align: center;
+}
+
+.footer-right ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
