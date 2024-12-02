@@ -140,41 +140,50 @@ body {
     background-color: #85d6b0;
 }
 
-/* Footer */
+/* Footer Styles */
 .footer {
-    background-color: #00463e;
+    background-color: #00463e; /* Dark Green Background */
     color: white;
-    padding: 20px 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribute sections horizontally */
+    flex-wrap: wrap; /* Allow sections to wrap if the screen is smaller */
+    align-items: flex-start; /* Align items to the top */
+    padding: 40px 30px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex-basis: 23%; /* Each section takes about 1/4 of the width */
+    margin: 10px;
     text-align: left;
 }
 
-.footer-section {
-    max-width: 20%;
-}
-
+/* Footer Section Headings */
 .footer-section h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
+    color: #fff;
 }
 
+/* Footer Section Lists */
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
 
+/* List Items */
 .footer-section li {
-    margin: 10px 0;
+    margin-bottom: 8px;
 }
 
+/* Links */
 .footer-section a {
-    color: #85d6b0;
+    color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 1em;
 }
 
+/* Hover effect for links */
 .footer-section a:hover {
-    color: #ffd3b6;
+    color: #85d6b0;
 }
