@@ -29,7 +29,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('/root/banner-placeholder.png') center/cover no-repeat;
+    background: url('/root-folder/banner-placeholder.png') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 100px 20px;
